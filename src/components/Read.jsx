@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState("");
 
   const getData = async () => {
-    const response = await fetch("http://localhost:5000");
+    const response = await fetch("https://mern-backened-i1r3.onrender.com");
     const result = await response.json();
     // console.log(result);
 
@@ -20,7 +20,7 @@ const Read = () => {
   };
 
   const handleDelete = async (id) => {
-    const response = await fetch(`http://localhost:5000/${id}`, {
+    const response = await fetch(`https://mern-backened-i1r3.onrender.com/${id}`, {
       method: "DELETE",
     });
     const result = response.json();

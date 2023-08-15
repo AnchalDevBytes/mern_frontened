@@ -14,7 +14,7 @@ const Create = () => {
     e.preventDefault();
 
     const addUser = { name, email, age };
-    const response = await fetch("http://localhost:5000", {
+    const response = await fetch("https://mern-backened-i1r3.onrender.com", {
       method: "POST",
       body: JSON.stringify(addUser),
       headers: {
